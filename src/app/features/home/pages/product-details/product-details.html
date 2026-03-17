@@ -1,0 +1,15 @@
+<h3 class="text-center m-1 p-1">Product Details</h3>
+<div>
+    <div [innerHTML]="Product.details"></div>
+  <div class="d-flex justify-content-center mt-3">
+    <img [src]="Product.image" [alt]="Product.id" class="img-fluid">
+  </div>
+  <div class="d-flex justify-content-center mt-3">
+    <button class="btn btn-outline-success m-1 col-4">
+        Add to Cart
+    </button>
+    <button class="btn btn-outline-success m-1 col-4">
+        Order Now
+    </button>
+  </div>
+</div>

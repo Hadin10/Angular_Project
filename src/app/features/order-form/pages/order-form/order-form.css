@@ -1,0 +1,39 @@
+.order-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.order-title {
+  border-bottom: 2px solid #198754;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #198754;
+}
+
+.form-card {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.order-summary {
+  border-radius: 10px;
+  background-color: #f0fff4;
+}
+
+.success-card {
+  max-width: 450px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  font-size: 4rem;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+}

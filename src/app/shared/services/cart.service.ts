@@ -7,6 +7,7 @@ export interface CartItem {
   discount?: number;
   unit: string;
   image: string;
+  
   quantity: number;
 }
 

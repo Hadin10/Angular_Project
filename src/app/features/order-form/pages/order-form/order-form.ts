@@ -37,7 +37,7 @@ export class OrderForm {
       ? cartItems
           .map(
             (item) =>
-              `• (${item.name} x${item.quantity}) + Delivery = ৳${item.price * item.quantity} + 80`
+              `• (${item.name} x${item.quantity}) + Delivery = ৳${item.price * item.quantity} + ${item.quantity*80} = ৳${(item.price * item.quantity) + (item.quantity * 80)}`
           )
           .join('\n')
       : '(Direct order - no cart items)';
@@ -47,25 +47,25 @@ export class OrderForm {
     const orderId = Math.floor(Math.random() * (1000000000 - 100) + 500);
 
     const message = `
-===========================
-       NEW ORDER RECEIVED
-===========================
-Order ID   : ${orderId}
-Date       : ${orderDate}
----------------------------
-CUSTOMER INFO
----------------------------
-Name       : ${this.name}
-Mobile     : ${this.mobile}
-Address    : ${this.address}
----------------------------
-ORDER ITEMS
----------------------------
-${itemLines}
----------------------------
-TOTAL      : ৳${totalPrice}
-===========================
-    `.trim();
+                    ===========================
+                          NEW ORDER RECEIVED
+                    ===========================
+                    Order ID   : ${orderId}
+                    Date       : ${orderDate}
+                    ---------------------------
+                    CUSTOMER INFO
+                    ---------------------------
+                    Name       : ${this.name}
+                    Mobile     : ${this.mobile}
+                    Address    : ${this.address}
+                    ---------------------------
+                    ORDER ITEMS
+                    ---------------------------
+                    ${itemLines}
+                    ---------------------------
+                    TOTAL      : ৳${totalPrice}
+                    ===========================
+                        `.trim();
 
     const emailPayload = {
       service_id: 'service_4h4fxxo',

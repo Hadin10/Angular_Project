@@ -13,7 +13,7 @@ export class Home {
   cartService = inject(CartService);
 
   products = [
-    { id: 1,  name: 'Product 1',  price: 50, discount: 60, unit: 'kg', rating: Array.from({ length: 5 }), image: 'images/picture1.png' },
+    { id: 1,  name: 'সুন্দরবনের মধু',  price: 1250, discount: 1400, unit: 'kg', rating: Array.from({ length: 5 }), image: 'images/picture1.png' },
     { id: 2,  name: 'Product 2',  price: 50, discount: 60, unit: 'kg', rating: Array.from({ length: 5 }), image: 'images/picture2.png' },
     { id: 3,  name: 'Product 3',  price: 50, discount: 60, unit: 'kg', rating: Array.from({ length: 5 }), image: 'images/picture3.png' },
     { id: 4,  name: 'Product 4',  price: 50, discount: 60, unit: 'kg', rating: Array.from({ length: 5 }), image: 'images/picture4.png' },

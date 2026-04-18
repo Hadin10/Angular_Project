@@ -1,4 +1,4 @@
-<div class="bg-dark text-white p-1 h-100">
+<div id="SideBar" class="bg-dark text-white p-1 h-100">
   <ul class="nav nav-pills flex-column mb-auto">
     <li class="nav-item">
       <a routerLink="/" routerLinkActive="active" class="nav-link text-white">
@@ -25,3 +25,11 @@
     </li> -->
   </ul>
 </div>
+
+<style>
+  @media (max-width: 767px) {
+    #SideBar {
+      display: none;
+    }
+  }
+</style>
